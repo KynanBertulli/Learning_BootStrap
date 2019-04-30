@@ -1,0 +1,68 @@
+<!-- 
+    
+    Learning about Grid Column offsets in BootStrap:
+    
+    if you wanted to create a layour with a row with one column 
+    and another row with 4 columns. The first row is offset by 3 columns.
+    
+    we use the key term offset-#ofColumns we want offset
+ -->
+
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <link rel = "stylesheet" type = "text/css" href= "style.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     </head>
+     <body>
+         <div class ="container">
+             <div class = "row">
+                <div class="col-md-3 offset-3">
+                    <div class ="newDiv">
+                        Column 1
+                    </div>
+                </div>
+             </div>
+             <div class = "row">
+                    <div class="col-md-3 ">
+                            <div class ="newDiv">
+                                Column 1
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                                <div class ="newDiv">
+                                    Column 1
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class ="newDiv">
+                                        Column 1
+                                    </div>
+                                </div>
+
+             </div>
+             <div class ="row">
+                    <div class="col-md-3 offset-0">
+                            <div class ="newDiv">
+                                Column 1
+                            </div>
+                        </div>
+             </div>
+             <div class ="row">
+                    <div class="col-md-3 offset-3">
+                            <div class ="newDiv">
+                                Column 1
+                            </div>
+                        </div>
+             </div>
+             <div class ="row">
+                    <div class="col-md-3 offset-6">
+                            <div class ="newDiv">
+                                Column 1
+                            </div>
+                        </div>
+             </div>
+         </div>
+     </body>
+ </html>

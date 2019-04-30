@@ -1,0 +1,46 @@
+<!-- 
+    Learning about grid Layouts in Bootstrap:
+
+    we can create different layouts for md devices and large devices
+
+    understandig how to create layouts on multiple devices is about understanding ratios
+    if each box each takes 6 columns in a large screen 6 + 6 is 1:1 so two box on each row
+
+    but when we want to create a medium layout where the second box on each row shrinks by half
+    it would need to be 8:4 increasing from 6 still keeps the box at the same size because the ratio of screen is the same.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel = "stylesheet" type = "text/css" href= "style.css">
+    </head>
+    <body>
+        <div class ="container">
+            <div class ="row">
+                <div class = "col-lg-6 col-md-8">
+                    <div class ="newDiv">
+                        column1
+                    </div>
+                </div>
+                <div class = "col-lg-6 col-md-4">
+                        <div class ="newDiv">
+                            column2
+                        </div>
+                </div>
+                <div class = "col-lg-6 col-md-8">
+                        <div class ="newDiv">
+                            column3
+                        </div>
+                    </div>
+                    <div class = "col-lg-6 col-md-4">
+                            <div class ="newDiv">
+                                column4
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>>

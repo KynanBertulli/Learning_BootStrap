@@ -1,0 +1,58 @@
+<!-- 
+
+    Learning about Buttons, Dropdown Menus and Input Fields in BootStrap
+
+    we need to import the Bootstrap Javascript file in order to add functionality of Boostrap 
+-->
+ <!DOCTYPE html>
+<html>
+    <head>     
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel = "stylesheet" type = "text/css" href= "style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Buttons in BootStrap -->
+            <button> Click this!</button>
+            <!-- different button classes -->
+            <button class="btn btn-primary"> BootStrap... Click this!</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+
+            <!-- button sizes -->
+            <button class= "btn btn-lg btn-primary">Large Button</button>
+            <button class= "btn btn-sm btn-primary">small Button</button>
+            <div class="row"> <button class="btn btn-block btn-primary">Long Button.. click this</button></div>
+
+            <!-- drop down menus in BootStrap -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownButton" data-toggle="dropdown" aria-hapopup="True"  aria-expanded="false">
+                DropDown Button    
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownButton">
+                    <a hreh ="1" class="dropdown-item"> Menu item 1</a>
+                    <a hreh ="2" class="dropdown-item"> Menu item 2</a>
+                    <a hreh ="3" class="dropdown-item"> Menu item 3</a>
+                </div>
+            </div>
+
+
+            <div class ="input-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> $ </span></div>
+                <input type="text" class="form-control" placeholder="Enter an Amount:">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Done</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

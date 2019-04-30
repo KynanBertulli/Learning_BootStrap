@@ -1,0 +1,57 @@
+<!-- 
+    Learning BootStrap 
+
+    Grid System is the most important thing when learning with bootstrap
+    way of placing elements on your page
+    horizontal and vertical lines
+    • takes entire page into 12 columns w/ some space in between
+    • a row can also hold all 12 columns
+
+    must first create container class when you want to place a container
+    then create a row within container
+    use .call class to create column
+
+     <div class ="col-md-6"> defines the type of screen we are working with
+         md, lg, xl
+        -6 defines how many columsn the row takes..
+    container > row > divs
+    goal of bootstrap is to create responsive websites on all devices
+
+    grid classes:
+    5 grid classes(xs,sm,md,lg,xl)
+        col-            devices less than 576px
+        col-sm-         devices greater than 576 px
+        col-md-         devices greater than 768 px
+        col-lg-         devices greater than 992 px
+        col-xl-         devices greater than 1200 px
+    
+    we can use different grid classes at once to support multiple devices..
+    <div class ="col-md-6 col-sm-6">
+
+    
+ -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href= "style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class ="container">
+            <div class ="row">
+                <div class ="col-md-6 col-sm-6">
+                    <div class = "newDiv">
+                        Left Column
+                    </div>
+                </div>
+                <div class = "col-md-6 col-sm-6">
+                        <div class = "newDiv">
+                            Right Column
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
